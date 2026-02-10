@@ -58,7 +58,7 @@ set_llm_cache(InMemoryCache())
 - Better instruction following
 - Proper conversation context
 - Role-based prompting (system, human, ai)
-- More cost-effective (GPT-3.5-turbo vs GPT-3)
+- More cost-effective (GPT-3.5-turbo vzzxs GPT-3)
 - Better performance on most tasks
 
 **When to use LLMs:**
