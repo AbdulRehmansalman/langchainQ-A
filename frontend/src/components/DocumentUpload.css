@@ -1,0 +1,213 @@
+.document-upload {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.upload-header {
+    margin-bottom: 2rem;
+}
+
+.upload-header h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* Upload Area */
+.upload-area {
+    background: var(--surface);
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.upload-area:hover {
+    border-color: var(--primary);
+    background: var(--surface-light);
+}
+
+.upload-area.drag-active {
+    border-color: var(--primary);
+    background: var(--surface-light);
+    transform: scale(1.02);
+}
+
+.upload-area.uploading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.upload-area svg {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.upload-area h3 {
+    margin-bottom: 0.5rem;
+}
+
+.upload-area p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.upload-btn:hover {
+    background: var(--primary-dark);
+}
+
+/* Documents Section */
+.documents-section {
+    margin-bottom: 2rem;
+}
+
+.documents-section h3 {
+    margin-bottom: 1rem;
+}
+
+.documents-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.document-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s;
+}
+
+.document-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+}
+
+.document-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--surface-light);
+    border-radius: 8px;
+    color: var(--primary);
+}
+
+.document-info {
+    flex: 1;
+}
+
+.document-name {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.document-meta {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.document-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.status-icon {
+    flex-shrink: 0;
+}
+
+.status-icon.success {
+    color: var(--success);
+}
+
+.status-icon.processing {
+    color: var(--warning);
+}
+
+.status-icon.error {
+    color: var(--error);
+}
+
+.delete-doc-btn {
+    padding: 0.75rem;
+    background: transparent;
+    color: var(--text-secondary);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.delete-doc-btn:hover {
+    background: var(--error);
+    color: white;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-secondary);
+}
+
+.empty-state svg {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* Info Section */
+.info-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.info-section h4 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.info-section ol {
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .upload-area {
+        padding: 2rem 1rem;
+    }
+
+    .document-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .document-meta {
+        justify-content: center;
+    }
+}

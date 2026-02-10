@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+*.db
+qa_system.db
+
+# Node
+node_modules/
+dist/
+build/
+
+# IDE/System
+.DS_Store
+.vscode/
+.idea/
+
+# Application specific
+uploads/
+.pytest_cache/
+coverage/
